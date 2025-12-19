@@ -10,18 +10,19 @@
 
             grid-template-columns: 1fr 2fr;
             grid-template-rows: auto auto;
+
+            grid-template-areas:
+                "leftNav header header"
+            "leftNav main  main";
         }
         .first-item {
-            grid-column: 1 / span 2;
-            grid-row: 1;
+            grid-area: header;
         }
         .second-item {
-            grid-column: 1;
-            grid-row: 1 / span 2;
+           grid-area: leftNav;
         }
         .third-item {
-            grid-column: 2;
-            grid-row: 2;
+            grid-area: main;
         }
     </style>
 </head>
